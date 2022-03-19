@@ -260,7 +260,7 @@ end)
 
 addEvent('remove.phonedata', true)
 addEventHandler('remove.phonedata', root, function()
-    local datas = {'lastPhoneId', 'phone.viewed.num', 'phone.target.number', 'called', 'call.num', 'callTarget', 'callWaiting', 'caller'}
+    local datas = {'lastPhoneId', 'phone.viewed.num', 'phone.target.number', 'call.services', 'called', 'call.num', 'callTarget', 'callWaiting', 'caller'}
     for index, value in ipairs(datas) do
         source:removeData(value)
         boneAttach:detach(phones[source])
